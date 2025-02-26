@@ -10,14 +10,8 @@ public class MainMenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        CreditsCanvas SetActive(false);
-        MainMenuCanvas SetActive(true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CreditsCanvas.SetActive(false);
+        MainMenuCanvas.SetActive(true);
     }
 
     public void PlayButton()
@@ -27,8 +21,8 @@ public class MainMenuScript : MonoBehaviour
 
     public void CreditsButton()
     {
-        CreditsCanvas SetActive(true);
-        MainMenuCanvas SetActive(false);
+        CreditsCanvas.SetActive(true);
+        MainMenuCanvas.SetActive(false);
     }
 
     public void QuitButton()

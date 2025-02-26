@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public GameObject Gate;
     private Rigidbody rb;
     public int Score;
+    public AudioSource coinSound;
 
     void SetScoreText()
     {
@@ -67,6 +68,7 @@ public class PlayerController : MonoBehaviour
                 Gate.gameObject.SetActive(false);
             }
             SetScoreText();
+            coinSound.Play();
         }
 
         if (other.gameObject.CompareTag("Danger"))

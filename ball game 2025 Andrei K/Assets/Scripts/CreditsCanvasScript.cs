@@ -2,26 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CredtisCanvasCript : MonoBehaviour
+public class CreditsCanvasScript : MonoBehaviour
 {
     public GameObject CreditsCanvas;
     public GameObject MainMenuCanvas;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void BackButton()
     {
-        CreditsCanvas SetActive(false);
-        MainMenuCanvas SetActive(true);
+        CreditsCanvas.SetActive(false);
+        MainMenuCanvas.SetActive(true);
     }
 }
